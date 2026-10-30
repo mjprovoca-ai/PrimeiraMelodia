@@ -466,3 +466,8 @@ table.tabela { width: 100%; border-collapse: collapse; font-size: 14.5px; min-wi
   .ceu .passaro, .ceu .passaro .ave path { animation: none; }
   .cena .it.novo { animation: none; }
 }
+
+/* topo da página inicial: o wordmark do kit, não o ícone */
+.marca-topo { margin: 0 0 6px; line-height: 0; }
+.marca-topo img { width: min(100%, 420px); height: auto; }
+.slogan-topo { margin: 14px 0 0; font-size: clamp(18px, 4.6vw, 22px); font-weight: 700; letter-spacing: -0.01em; color: var(--ceu-texto, var(--texto)); }

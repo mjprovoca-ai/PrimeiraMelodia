@@ -6,8 +6,11 @@ export default function Inicio() {
   return (
     <main className="app sem-abas">
       <section style={{ paddingTop: 24 }}>
-        <span className="logo-tile"><img src="/marca/simbolo.svg" alt="" width={92} height={63} /></span>
-        <h1 className="titulo-xl">Primeira<br />Melodia</h1>
+        <h1 className="marca-topo" aria-label="Primeira Melodia">
+          <img className="so-dia" src="/marca/wordmark.svg" alt="" width={1684} height={251} />
+          <img className="so-noite" src="/marca/wordmark-claro.svg" alt="" width={1684} height={251} />
+        </h1>
+        <p className="slogan-topo">Crie uma música. Emocione quem você ama.</p>
       </section>
 
       <article className="cartao manifesto mt24">
@@ -21,8 +24,7 @@ export default function Inicio() {
         <Link href="/entrar?modo=cadastrar" className="btn btn-pri">Criar minha conta</Link>
         <Link href="/entrar" className="btn btn-sec">Já tenho conta · Entrar</Link>
         <BotaoGoogle />
-        <Link href="/palco" className="btn btn-palco"><span className="ponto" /> 🎵 Entrar no Palco · ouvir músicas ao vivo</Link>
-        <Link href="/entrar?admin=1" className="link centro" style={{ alignSelf: "center" }}>Sou administrador</Link>
+        <Link href="/palco" className="btn btn-palco"><span className="ponto" /> Entrar no Palco · ouvir músicas ao vivo</Link>
       </div>
 
       <Creditos />
